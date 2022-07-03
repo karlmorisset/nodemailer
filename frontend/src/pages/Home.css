@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  background: rgba(113,9,121,1);
+  background: linear-gradient(120deg, rgba(36,0,31,1) 0%, rgba(113,9,121,1) 48%, rgba(0,212,255,1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+h1{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  background: linear-gradient(120deg, rgba(36,0,31,1) 0%, rgba(113,9,121,1) 48%, rgba(0,212,255,1) 100%);
+  background-clip: text;
+  color: transparent;
+}
+
+form {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  border-radius: 20px;
+  min-width: 300px;
+  border: 5px solid orange;
+}
+
+label {
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+  padding: 10px;
+  margin-top: 4px;
+}
+
+input {
+  height: 30px;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type="submit"] {
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 10px;
+  height: auto;
+  cursor: pointer;
+  color: white;
+}
+
+input[type="submit"].idle{
+  background-color: black;
+}
+
+input[type="submit"].idle:hover{
+  background-color: white;
+  color: black;
+}
+
+input[type="submit"].success{
+  background-color: #51ba23;
+  pointer-events: none;
+}
+
+input[type="submit"].error {
+  background-color: #b02c1a;
+  pointer-events: none;
+}
